@@ -23,6 +23,7 @@ yarn add cz-conventional-changelog --dev
 }
 ```
 
+### Test 
 Now we can run `yarn commit` or `npm run commit` instead of `git commit`
 
 
@@ -53,4 +54,14 @@ yarn husky install
 - Add the commit-msg hook
 ```
 yarn husky add .husky/commit-msg 'yarn commitlint --edit $1'
+```
+
+### Test 
+
+```
+git commit -m 'add commitlint' # fail
+```
+
+```
+git commit -m 'chore: add commitlint' # success
 ```
