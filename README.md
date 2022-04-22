@@ -1,5 +1,9 @@
 # Git Guide
 
+## Conventional commits
+
+[conventionalcommits](https://www.conventionalcommits.org/en/v1.0.0/)
+
 ## Commitlint
 ### Docs
 - [Commitlint](https://commitlint.js.org)
