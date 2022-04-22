@@ -1,33 +1,11 @@
 # Git Guide
 
+## Commitlint
+### Docs
+- [Commitlint](https://commitlint.js.org)
+- [What is commitlint](https://github.com/conventional-changelog/commitlint#what-is-commitlint)
 
-## Install & config commitizen
-- Install commitizen adapter
-```
-yarn add cz-conventional-changelog --dev
-```
-
-- add config to package.json
-```
-"config": {
-	"commitizen": {
-		"path": "cz-conventional-changelog"
-	}
-}
-```
-
-- add command to scripts in package.json
-```
-"scripts": {
-    "commit": "cz"
-}
-```
-
-### Test 
-Now we can run `yarn commit` or `npm run commit` instead of `git commit`
-
-
-## Install & config commitlint
+### Install & config commitlint
 
 - Install commitlint with a config:
 ```
@@ -65,3 +43,32 @@ git commit -m 'add commitlint' # fail
 ```
 git commit -m 'chore: add commitlint' # success
 ```
+
+## Commitizen
+
+### Install & config commitizen
+- Install commitizen adapter
+```
+yarn add cz-conventional-changelog --dev
+```
+
+- add config to package.json
+```
+"config": {
+	"commitizen": {
+		"path": "cz-conventional-changelog"
+	}
+}
+```
+
+- add command to scripts in package.json
+```
+"scripts": {
+    "commit": "cz"
+}
+```
+
+### Test 
+Now we can run `yarn commit` or `npm run commit` instead of `git commit`
+
+
